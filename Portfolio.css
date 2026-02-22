@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #0e0e12;
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 8%;
+  background: #111118;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  color: #8a7cff;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ccc;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #8a7cff;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px 30px;
+}
+
+.profile-img {
+  width: 150px;
+  border-radius: 50%;
+  border: 4px solid #8a7cff;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  color: #8a7cff;
+  font-size: 32px;
+}
+
+.hero h3 {
+  margin: 10px 0;
+  color: #ccc;
+}
+
+.section {
+  padding: 20px 8%;
+  text-align: center;
+}
+
+.section h2 {
+  margin-bottom: 30px;
+  color: #8a7cff;
+}
+
+.about-card {
+  background: #181824;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 700px;
+  margin: auto;
+}
+
+.timeline {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+  border-left: 3px solid #8a7cff;
+}
+
+.timeline-item {
+  margin: 30px 0;
+  padding-left: 20px;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background: #8a7cff;
+  border-radius: 50%;
+  position: absolute;
+  left: -9px;
+  top: 5px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #181824;
+  padding: 20px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: #22223a;
+}
+
+.achievement-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.achievement-box {
+  padding: 25px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #6c63ff, #8a7cff);
+  color: white;
+}
+
+.contact-card {
+  background: #181824;
+  padding: 25px;
+  border-radius: 12px;
+  max-width: 500px;
+  margin: auto;
+}
+#contact a {
+  color: #8a7cff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+#contact a:hover {
+  color: #6c63ff;
+  text-decoration: underline;
+}
+.nav-links a.active {
+  color: #8a7cff;
+  border-bottom: 2px solid #8a7cff;
+  padding-bottom: 4px;
+}
+
+@media(max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+}
